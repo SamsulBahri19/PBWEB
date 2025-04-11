@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Login Kaputama</h2>
+
+    <table align="center" border="1">
+        <form method="post" action="proses.php"></form>
+        <tr align="center">
+            <td>Nama</td>
+            <td><input type="text" name="nama" size="20"></td>
+        </tr>
+        <tr align="center">
+            <td>Jenis Kelamin</td>
+            <td><select name="jk" >
+                <option value="L">Laki-Laki</option>
+                <option value="P">Perempuan</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Agama</td>
+            <td><input type="radio" name="agama" value="Islam">Islam <br>
+                <input type="radio" name="agama" value="Protestan">Protestan</td>
+        </tr>
+
+        <tr>
+            <td>Hobby</td>
+            <td><input type="checkbox" name="hoby" value="Sepak-bola">Sepak bola <br>
+                <input type="checkbox" name="hoby" value="futsal">Futsal <br>
+                <input type="checkbox" name="hoby" value="makan">makan <br>
+                <input type="checkbox" name="hoby" value="travelink">travelink <br>
+                <input type="checkbox" name="hoby" value="hiking">Hiking</td>
+        </tr>
+
+        <tr align="center">
+            <td>Alamat</td>
+            <td><textarea name="alamat" cols="20" rows="5"></textarea> </td>
+        </tr>
+
+        <tr align="center">
+            <td><input type="submit" value="kirim"></td>
+            <td><input type="reset" value="batal"></td>
+        </tr>
+
+        </form>
+    </table>
+    
+       
+</body>
+</html>
