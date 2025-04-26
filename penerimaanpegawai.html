@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Penerimaan Pegawai</title>
+</head>
+<body>
+  <h2>Form Penerimaan Pegawai</h2>
+  <form id="formPelamar">
+    <label>Jenis Kelamin:</label><br>
+    <select id="jk">
+      <option value="laki-laki">Laki-laki</option>
+      <option value="perempuan">Perempuan</option>
+    </select><br><br>
+
+    <label>Tinggi Badan (cm):</label><br>
+    <input type="number" id="tinggi"><br><br>
+
+    <label>Berat Badan (kg):</label><br>
+    <input type="number" id="berat"><br><br>
+
+    <label>IPK:</label><br>
+    <input type="number" step="0.01" id="ipk"><br><br>
+
+    <label>Pendidikan Terakhir:</label><br>
+    <select id="pendidikan">
+        <option value="D3">D3</option>
+        <option value="S1">S1</option>
+    </select><br><br>
+
+    <button type="button" onclick="cekKelayakan()">Cek Kelayakan</button>
+    </form>
+
+    <p id="hasil"></p>
+
+    <script>
+    function cekKelayakan() {
+        const jk = document.getElementById("jk").value;
+        const tinggi = parseInt(document.getElementById("tinggi").value);
+        const berat = parseInt(document.getElementById("berat").value);
+        const ipk = parseFloat(document.getElementById("ipk").value);
+        const pendidikan = document.getElementById("pendidikan").value;
+
+        const bbIdeal = tinggi - 110;
+        let hasil = "";
+
+        if (ipk < 3 || ipk > 4) {
+        hasil = "Tidak Lolos: IPK harus antara 3.0 - 4.0.";
+        } else if (["D3", "S1"].indexOf(pendidikan) === -1) {
+        hasil = "Tidak Lolos: Pendidikan tidak sesuai.";
+        } else if (jk === "laki-laki") {
+        if (tinggi < 170 || tinggi > 179) {
+            hasil = "Tidak Lolos: Tinggi badan laki-laki harus antara 170-179 cm.";
+        } else if (berat !== bbIdeal) {
+            hasil = "Tidak Lolos: Berat badan tidak ideal (harus " + bbIdeal + " kg).";
+        } else {
+            hasil = "Lolos: Anda memenuhi syarat.";
+        }
+        } else if (jk === "perempuan") {
+        if (tinggi < 160 || tinggi > 170) {
+            hasil = "Tidak Lolos: Tinggi badan perempuan harus antara 160-170 cm.";
+        } else if (berat !== bbIdeal) {
+            hasil = "Tidak Lolos: Berat badan tidak ideal (harus " + bbIdeal + " kg).";
+        } else {
+            hasil = "Lolos: Anda memenuhi syarat.";
+        }
+        } else {
+        hasil = "Jenis kelamin tidak valid.";
+        }
+
+        document.getElementById("hasil").innerText = hasil;
+    }
+    </script>
+</body>
+</html>

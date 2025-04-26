@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Online</title>
+</head>
+<body>
+    <h2>Billing Online</h2>
+    <label>Masukkan jumlah detik pemakaian:</label><br>
+    <input type="number" id="jumlahDetik"><br><br>
+    <button onclick="hitungBilling()">Hitung</button>
+
+    <h3>Hasil:</h3>
+    <p id="hasil"></p>
+
+    <script>
+    function hitungBilling() {
+        let totalDetik = parseInt(document.getElementById("jumlahDetik").value);
+        const pulsaDetik = 45;
+        const hargaPulsa = 30;
+
+      // Hitung jumlah pulsa (dibulatkan ke atas jika ada sisa)
+        const jumlahPulsa = Math.ceil(totalDetik / pulsaDetik);
+      const totalBayar = jumlahPulsa * hargaPulsa;
+
+      // Hitung jam, menit, detik dari total detik
+        const jam = Math.floor(totalDetik / 3600);
+        totalDetik %= 3600;
+        const menit = Math.floor(totalDetik / 60);
+        const detik = totalDetik % 60;
+
+        document.getElementById("hasil").innerHTML = `
+        Waktu Pemakaian: ${jam} jam, ${menit} menit, ${detik} detik<br>
+        Jumlah Pulsa: ${jumlahPulsa} pulsa<br>
+        Total Bayar: Rp ${totalBayar}
+        `;
+    }
+    </script>
+</body>
+</html>
