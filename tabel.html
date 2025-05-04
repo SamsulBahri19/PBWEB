@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabel</title>
+    <title>Tabel Mahasiswa</title>
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4A7C59;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #6A994E;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #DDEECC;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Daftar Mahasiswa</h1>
-    <table border="1" align="center">
-        <tr align="center">
-            <td rowspan="2" width="150px" bgcolor="grey">Nama Mahasiswa</td>
-            <td rowspan="2" width="75px" bgcolor="grey">Jurusan</td>
-            <td colspan="2" bgcolor="grey">nilai</td>
-            
-            <td rowspan="2" bgcolor="grey">Nilai Akhir</td>
+    <h1>Daftar Mahasiswa</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Nama Mahasiswa</th>
+            <th rowspan="2">Jurusan</th>
+            <th colspan="2">Nilai</th>
+            <th rowspan="2">Nilai Akhir</th>
         </tr>
-        <tr align="center">
-            <td bgcolor="grey">UTS</td>
-            <td bgcolor="grey">UAS</td>
-            
+        <tr>
+            <th>UTS</th>
+            <th>UAS</th>
         </tr>
         <tr>
             <td>Ananda Aditya</td>
-            <td align="center">TI</td>
-            <td align="center">85</td>
-            <td align="center">85</td>
-            <td align="center">A</td>
+            <td>TI</td>
+            <td>85</td>
+            <td>85</td>
+            <td>A</td>
         </tr>
         <tr>
             <td>M Dimas Khansa</td>
-            <td align="center">TI</td>
-            <td align="center">85</td>
-            <td align="center">85</td>
-            <td align="center">A</td>
+            <td>TI</td>
+            <td>85</td>
+            <td>85</td>
+            <td>A</td>
         </tr>
         <tr>
             <td>Dimas</td>
-            <td align="center">TI</td>
-            <td align="center">85</td>
-            <td align="center">85</td>
-            <td align="center">A</td>
+            <td>TI</td>
+            <td>85</td>
+            <td>85</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Novi Thalia</td>
+            <td>TI</td>
+            <td>85</td>
+            <td>85</td>
+            <td>A</td>
         </tr>
     </table>
 </body>

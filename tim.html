@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Kami</title>
+  <style>
+    body {
+      background-color: #A5D6A7;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      width: 12vw; /* 12% dari lebar layar (viewport) */
+      border-collapse: collapse;
+      background-color: #3A6351;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    td {
+      padding: 5px 6px;
+      text-align: center;
+      font-size: 0.7em;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    tr:nth-child(1),
+    tr:nth-child(2) {
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body >
-    <hr>
-    <table align="center" border="1">
-        <tr align="center">
-            <td>Ananda Aditya</td>
-            <td>M Dimas Khansa</td>
-            <td>Dimas</td>
-        </tr>
-        <tr align="center">
-            <td>24451005</td>
-            <td>24451033</td>
-            <td>24451015</td>
-        </tr>
-        <tr align="center">
-            <td><img src="image/adit.jpg" width="70px" height="70px" style="border-radius: 50%;" ></td>
-            <td><img src="image/dimask.jpg" width="70px" height="70px" style="border-radius: 50%;" ></td>
-            <td><img src="image/asep.jpg" width="70px" height="70px" style="border-radius: 50%;" ></td>
-        </tr>
-    </table>
+<body>
+
+  <table>
+    <tr>
+      <td>Ananda</td>
+      <td>Dimas K</td>
+      <td>Dimas</td>
+      <td>Novi</td>
+    </tr>
+    <tr>
+      <td>24451005</td>
+      <td>24451033</td>
+      <td>24451015</td>
+      <td>2447081</td>
+    </tr>
+    <tr>
+      <td><img src="image/adit.jpg" alt="Ananda"></td>
+      <td><img src="image/dimask.jpg" alt="Dimas K"></td>
+      <td><img src="image/asep.jpg" alt="Dimas"></td>
+      <td><img src="image/novi.jpg" alt="Novi"></td>
+    </tr>
+  </table>
+
 </body>
 </html>

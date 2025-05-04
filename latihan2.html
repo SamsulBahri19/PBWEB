@@ -3,33 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dokumen Menarik</title>
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4A7C59;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #A7C957;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #6A994E;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #A7C957;
+            margin: 40px 0;
+        }
+
+        ul, ol {
+            list-style-position: inside;
+            
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h4 {
+            color: #386641;
+        }
+        
+    </style>
 </head>
 <body>
     <h2>LINK ADDRESS</h2>
-         <a href="latihan1.html">link ke latihan 1</a><br>
-         <a href="http://www.google.com">Klik untuk ke google</a>
-         <hr>
-         <h2>Penomoran</h2>
-         Contoh UL nama nama buah
-         <ul>
-            <li>Semangka</li>
-            <li>Melon</li>
-            <li>Salak</li>
-         </ul>
-         Contoh ol nama nama buah
-         <ol>
-            <li>Semangka</li>
-            <li>Melon</li>
-            <li>Salak</li>
-         </ol>
-         <hr>
-         <p>Gambar tanpa format</p>
-         <img src="image/pemandangan1.jpg" height="100">
-         <p>Gambar dengan format hspace</p>
-         <img src="image/pemandangan22.jpg" height="100" hspace="100">
-         <p>Gambar dengan border</p>
-         <img src="image/pemandangan3.jpg" border="2" height="100">
+    <a href="latihan1.html">Link ke Latihan 1</a>
+    <a href="http://www.google.com">Klik untuk ke Google</a>
 
+    <hr>
+
+    <h2>Penomoran</h2>
+    <h4>Contoh UL nama nama buah</h4>
+    <ul>
+        <li>Semangka</li>
+        <li>Melon</li>
+        <li>Salak</li>
+    </ul>
+
+    <h4>Contoh OL nama nama buah</h4>
+    <ol>
+        <li>Semangka</li>
+        <li>Melon</li>
+        <li>Salak</li>
+    </ol>
+
+    <hr>
+
+    <h2>Galeri Gambar</h2>
+    <div class="gallery">
+        <div class="card">
+            <img src="image/pemandangan1.jpg" alt="Pemandangan 1">
+            <p>Tanpa Format</p>
+        </div>
+        <div class="card">
+            <img src="image/pemandangan22.jpg" alt="Pemandangan 2" hspace="20">
+            <p>Dengan Hspace</p>
+        </div>
+        <div class="card" >
+            <img border="4" class="border" src="image/pemandangan3.jpg" alt="Pemandangan 3">
+            <p>Dengan Border</p>
+        </div>
+    </div>
 </body>
 </html>

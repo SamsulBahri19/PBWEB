@@ -1,247 +1,224 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Formulir Pendaftaran Mahasiswa Baru</title>
-  </head>
-  <body>
-    <h2 align="center">FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
-    <p align="center">Tahun Akademik: 20XX/20XX</p>
-    <p align="center">STMIK KAPUTAMA</p>
-    <p align="center">
-      Jl. Veteran No.4A, Kota Binjai, Telp. +62 853 1170 5402
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulir Pendaftaran Mahasiswa Baru</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #2E7D32;
+    }
+
+    p.center {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 95%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-section {
+      margin-top: 30px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #388E3C;
+    }
+
+    a {
+      color: #2E7D32;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .signature-input {
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
+    <p class="center">Tahun Akademik: 20XX/20XX</p>
+    <p class="center">STMIK KAPUTAMA</p>
+    <p class="center">Jl. Veteran No.4A, Kota Binjai, Telp. +62 853 1170 5402</p>
+    <p class="center">
+      Website: <a href="https://pmb.kaputama.ac.id/landing/">Kaputama.ac.id</a> |
+      Email: info@kaputama.ac.id
     </p>
-    <p align="center">
-      Website:
-      <a href="https://pmb.kaputama.ac.id/landing/">Kaputama Ac Id</a> | Email:
-      info@kaputama.ac.id
-    </p>
 
-    <table
-      width="100%"
-      align="center"
-      style="display: flex; justify-content: center">
-      <tr>
-        <td>
-          <form action="#" method="post">
-            <h3>A. DATA PRIBADI</h3>
-            <table border="1" cellspacing="0" cellpadding="5" width="100%">
-              <tr>
-                <td>1. Nama Lengkap</td>
-                <td>
-                  <input
-                    type="text"
-                    name="nama_lengkap"
-                    style="width: 95%"
-                    placeholder="Masukkan nama lengkap" />
-                </td>
-              </tr>
-              <tr>
-                <td>2. Tempat/Tanggal Lahir</td>
-                <td>
-                  <input
-                    type="text"
-                    name="ttl"
-                    style="width: 95%"
-                    placeholder="Masukkan tempat/tanggal lahir" />
-                </td>
-              </tr>
-              <tr>
-                <td>3. Jenis Kelamin</td>
-                <td>
-                  <label
-                    ><input type="radio" name="jk" value="Laki-laki" />
-                    Laki-laki</label
-                  >
-                  <label
-                    ><input type="radio" name="jk" value="Perempuan" />
-                    Perempuan</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>4. Agama</td>
-                <td>
-                  <label
-                    ><input type="radio" name="agama" value="Islam" />
-                    Islam</label
-                  >
-                  <label
-                    ><input type="radio" name="agama" value="Kristen" />
-                    Kristen</label
-                  >
-                  <label
-                    ><input type="radio" name="agama" value="Katolik" />
-                    Katolik</label
-                  >
-                  <label
-                    ><input type="radio" name="agama" value="Hindu" />
-                    Hindu</label
-                  >
-                  <label
-                    ><input type="radio" name="agama" value="Buddha" />
-                    Buddha</label
-                  >
-                  <label
-                    ><input type="radio" name="agama" value="Lainnya" />
-                    Lainnya</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>5. Alamat Lengkap</td>
-                <td>
-                  <textarea
-                    name="alamat"
-                    rows="2"
-                    style="width: 95%"
-                    placeholder="Masukkan alamat lengkap"></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td>6. No. HP / WhatsApp</td>
-                <td>
-                  <input
-                    type="text"
-                    name="no_hp"
-                    style="width: 95%"
-                    placeholder="Masukkan nomor HP/WhatsApp" />
-                </td>
-              </tr>
-              <tr>
-                <td>7. Email Aktif</td>
-                <td>
-                  <input
-                    type="email"
-                    name="email"
-                    style="width: 95%"
-                    placeholder="Masukkan email aktif" />
-                </td>
-              </tr>
-              <tr>
-                <td>8. Golongan Darah</td>
-                <td>
-                  <label
-                    ><input type="radio" name="gol_darah" value="A" /> A</label
-                  >
-                  <label
-                    ><input type="radio" name="gol_darah" value="B" /> B</label
-                  >
-                  <label
-                    ><input type="radio" name="gol_darah" value="AB" />
-                    AB</label
-                  >
-                  <label
-                    ><input type="radio" name="gol_darah" value="O" /> O</label
-                  >
-                  <label
-                    ><input type="radio" name="gol_darah" value="Tidak Tahu" />
-                    Tidak Tahu</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>9. Status Perkawinan</td>
-                <td>
-                  <label
-                    ><input type="radio" name="status" value="Belum Kawin" />
-                    Belum Kawin</label
-                  >
-                  <label
-                    ><input type="radio" name="status" value="Kawin" />
-                    Kawin</label
-                  >
-                  <label
-                    ><input type="radio" name="status" value="Cerai" />
-                    Cerai</label
-                  >
-                </td>
-              </tr>
-            </table>
+    <form action="#" method="post">
+      <div class="form-section">
+        <h3>A. DATA PRIBADI</h3>
+        <table border="1">
+          <tr>
+            <td>1. Nama Lengkap</td>
+            <td><input type="text" name="nama_lengkap" placeholder="Masukkan nama lengkap" required></td>
+          </tr>
+          <tr>
+            <td>2. Tempat/Tanggal Lahir</td>
+            <td><input type="text" name="ttl" placeholder="Masukkan tempat/tanggal lahir" required></td>
+          </tr>
+          <tr>
+            <td>3. Jenis Kelamin</td>
+            <td>
+              <label><input type="radio" name="jk" value="Laki-laki" required> Laki-laki</label>
+              <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td>4. Agama</td>
+            <td>
+              <label><input type="radio" name="agama" value="Islam" required> Islam</label>
+              <label><input type="radio" name="agama" value="Kristen"> Kristen</label>
+              <label><input type="radio" name="agama" value="Katolik"> Katolik</label>
+              <label><input type="radio" name="agama" value="Hindu"> Hindu</label>
+              <label><input type="radio" name="agama" value="Buddha"> Buddha</label>
+              <label><input type="radio" name="agama" value="Lainnya"> Lainnya</label>
+            </td>
+          </tr>
+          <tr>
+            <td>5. Alamat Lengkap</td>
+            <td><textarea name="alamat" rows="2" placeholder="Masukkan alamat lengkap" required></textarea></td>
+          </tr>
+          <tr>
+            <td>6. No. HP / WhatsApp</td>
+            <td><input type="text" name="no_hp" placeholder="Masukkan nomor HP/WhatsApp" required></td>
+          </tr>
+          <tr>
+            <td>7. Email Aktif</td>
+            <td><input type="email" name="email" placeholder="Masukkan email aktif" required></td>
+          </tr>
+          <tr>
+            <td>8. Golongan Darah</td>
+            <td>
+              <label><input type="radio" name="gol_darah" value="A" required> A</label>
+              <label><input type="radio" name="gol_darah" value="B"> B</label>
+              <label><input type="radio" name="gol_darah" value="AB"> AB</label>
+              <label><input type="radio" name="gol_darah" value="O"> O</label>
+              <label><input type="radio" name="gol_darah" value="Tidak Tahu"> Tidak Tahu</label>
+            </td>
+          </tr>
+          <tr>
+            <td>9. Status Perkawinan</td>
+            <td>
+              <label><input type="radio" name="status" value="Belum Kawin" required> Belum Kawin</label>
+              <label><input type="radio" name="status" value="Kawin"> Kawin</label>
+              <label><input type="radio" name="status" value="Cerai"> Cerai</label>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-            <h3>B. DATA PENDIDIKAN</h3>
-            <table border="1" cellspacing="0" cellpadding="5" width="100%">
-              <tr>
-                <td>1. Asal Sekolah</td>
-                <td>
-                  <input
-                    type="text"
-                    name="asal_sekolah"
-                    style="width: 95%"
-                    placeholder="Masukkan asal sekolah" />
-                </td>
-              </tr>
-              <tr>
-                <td>2. Jurusan/Program Studi</td>
-                <td>
-                  <input
-                    type="text"
-                    name="jurusan"
-                    style="width: 95%"
-                    placeholder="Masukkan jurusan/program studi" />
-                </td>
-              </tr>
-              <tr>
-                <td>3. Tahun Lulus</td>
-                <td>
-                  <input
-                    type="text"
-                    name="tahun_lulus"
-                    style="width: 95%"
-                    placeholder="Masukkan tahun lulus" />
-                </td>
-              </tr>
-              <tr>
-                <td>4. Nomor Ijazah</td>
-                <td>
-                  <input
-                    type="text"
-                    name="no_ijazah"
-                    style="width: 95%"
-                    placeholder="Masukkan nomor ijazah" />
-                </td>
-              </tr>
-              <tr>
-                <td>5. Nilai Rata-Rata</td>
-                <td>
-                  <input
-                    type="text"
-                    name="nilai"
-                    style="width: 95%"
-                    placeholder="Masukkan nilai rata-rata" />
-                </td>
-              </tr>
-            </table>
+      <div class="form-section">
+        <h3>B. DATA PENDIDIKAN</h3>
+        <table border="1">
+          <tr>
+            <td>1. Asal Sekolah</td>
+            <td><input type="text" name="asal_sekolah" placeholder="Masukkan asal sekolah" required></td>
+          </tr>
+          <tr>
+            <td>2. Jurusan/Program Studi</td>
+            <td><input type="text" name="jurusan" placeholder="Masukkan jurusan/program studi"></td>
+          </tr>
+          <tr>
+            <td>3. Tahun Lulus</td>
+            <td><input type="text" name="tahun_lulus" placeholder="Masukkan tahun lulus" required></td>
+          </tr>
+          <tr>
+            <td>4. Nomor Ijazah</td>
+            <td><input type="text" name="no_ijazah" placeholder="Masukkan nomor ijazah"></td>
+          </tr>
+          <tr>
+            <td>5. Nilai Rata-Rata</td>
+            <td><input type="text" name="nilai" placeholder="Masukkan nilai rata-rata"></td>
+          </tr>
+        </table>
+      </div>
 
-            <h3>C. PILIHAN PROGRAM STUDI</h3>
-            <p>
-              <label
-                ><input type="checkbox" name="prodi" value="Sistem Informasi" />
-                Sistem Informasi</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="prodi"
-                  value="Teknik Informatika" />
-                Teknik Informatika</label
-              >
-              <label
-                ><input type="checkbox" name="prodi" value="Lainnya" />
-                Lainnya</label
-              >
-            </p>
+      <div class="form-section">
+        <h3>C. PILIHAN PROGRAM STUDI</h3>
+        <p>
+          <label><input type="checkbox" name="prodi[]" value="Sistem Informasi"> Sistem Informasi</label>
+          <label><input type="checkbox" name="prodi[]" value="Teknik Informatika"> Teknik Informatika</label>
+          <label><input type="checkbox" name="prodi[]" value="Lainnya"> Lainnya</label>
+        </p>
+      </div>
 
-            <h3>D. DATA ORANG TUA/WALI</h3>
-            <table border="1" cellspacing="0" cellpadding="5" width="100%">
-              <tr>
-                <td>1. Nama Ayah</td>
-                <td>
-                  <input
-                    type="text"
-                    name="ayah"
-                    style="width: 95%"
-                    placeholder="Masukkan nama ayah" />
+      <div class="form-section">
+        <h3>D. DATA ORANG TUA/WALI</h3>
+        <table border="1">
+          <tr>
+            <td>1. Nama Ayah</td>
+            <td><input type="text" name="ayah" placeholder="Masukkan nama ayah
+
                 </td>
               </tr>
               <tr>
